@@ -9,4 +9,11 @@
     <%= garden.city %>
   </p>
 
+    <p>
+    <strong>Plants:</strong>
+    <% garden.plants.each do |plant| %>
+    <%=  link_to plant.name, plant_path(plant)%>
+    <% end %>
+  </p>
+
 </div>

@@ -5,6 +5,7 @@
 <div>
   <%= link_to "Edit this garden", edit_garden_path(@garden) %> |
   <%= link_to "Back to gardens", gardens_path %>
+  <%= link_to "Add a plant", new_garden_plant_path(@garden) %>
 
   <%= button_to "Destroy this garden", @garden, method: :delete %>
 </div>

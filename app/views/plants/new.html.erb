@@ -1,0 +1,7 @@
+<h1>Plants#create</h1>
+
+<%= simple_form_for([@garden, @plant]) do |f| %>
+  <%= f.input :name, collection: Plant::PLANTS %>
+  <%= f.input :origin %>
+  <%= f.submit %>
+<% end %>
