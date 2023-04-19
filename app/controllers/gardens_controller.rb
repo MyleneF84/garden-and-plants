@@ -42,7 +42,7 @@ class GardensController < ApplicationController
   # DELETE /gardens/1
   def destroy
     @garden.destroy
-    redirect_to gardens_url, notice: "Garden was successfully destroyed."
+    redirect_to gardens_path, notice: "Garden was successfully destroyed.", status: :see_other
   end
 
   private
